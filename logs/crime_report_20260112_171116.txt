@@ -1,0 +1,25 @@
+
+        ========================================
+        CRIME ANALYSIS DAILY REPORT
+        Generated: 2026-01-12 17:11:16 EST
+        ========================================
+        
+        SUMMARY STATISTICS:
+        N/A
+        
+        TOP 3 LOCATIONS:
+        [{'location': 'IC', 'crimeCount': 145943}, {'location': '510', 'crimeCount': 115091}, {'location': 'Invest Cont', 'crimeCount': 84701}]
+        
+        TOP 5 WEAPONS:
+        [{'weapon': '400', 'usageCount': 123716}, {'weapon': 'DUPLEX', 'usageCount': 98970}, {'weapon': 'STREET', 'usageCount': 30740}, {'weapon': '500', 'usageCount': 22714}, {'weapon': '"VEHICLE', 'usageCount': 18400}]
+        
+        TOP 10 CRIME TYPES:
+        [{'location': 'VEHICLE - STOLEN', 'crimeCount': 115190}, {'location': 'BATTERY - SIMPLE ASSAULT', 'crimeCount': 74839}, {'location': 'BURGLARY FROM VEHICLE', 'crimeCount': 63517}, {'location': 'THEFT OF IDENTITY', 'crimeCount': 62537}, {'location': '"VANDALISM - FELONY ($400 & OVER', 'crimeCount': 61092}, {'location': 'BURGLARY', 'crimeCount': 57871}, {'location': 'THEFT PLAIN - PETTY ($950 & UNDER)', 'crimeCount': 53717}, {'location': '"ASSAULT WITH DEADLY WEAPON', 'crimeCount': 53525}, {'location': 'INTIMATE PARTNER - SIMPLE ASSAULT', 'crimeCount': 46712}, {'location': 'THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)', 'crimeCount': 41314}]
+        
+        CRIMES BY AREA:
+        [{'location': 'Central', 'crimeCount': 69670}, {'location': '77th Street', 'crimeCount': 61758}, {'location': 'Pacific', 'crimeCount': 59514}, {'location': 'Southwest', 'crimeCount': 57441}, {'location': 'Hollywood', 'crimeCount': 52429}, {'location': 'N Hollywood', 'crimeCount': 51107}, {'location': 'Olympic', 'crimeCount': 50071}, {'location': 'Southeast', 'crimeCount': 49936}, {'location': 'Newton', 'crimeCount': 49177}, {'location': 'Wilshire', 'crimeCount': 48239}, {'location': 'Rampart', 'crimeCount': 46825}, {'location': 'West LA', 'crimeCount': 45729}, {'location': 'Northeast', 'crimeCount': 42963}, {'location': 'Van Nuys', 'crimeCount': 42883}, {'location': 'West Valley', 'crimeCount': 42156}, {'location': 'Devonshire', 'crimeCount': 41756}, {'location': 'Harbor', 'crimeCount': 41394}, {'location': 'Topanga', 'crimeCount': 41374}, {'location': 'Mission', 'crimeCount': 40351}, {'location': 'Hollenbeck', 'crimeCount': 37085}, {'location': 'Foothill', 'crimeCount': 33133}]
+        
+        ========================================
+        REPORT STATUS: COMPLETED
+        ========================================
+        

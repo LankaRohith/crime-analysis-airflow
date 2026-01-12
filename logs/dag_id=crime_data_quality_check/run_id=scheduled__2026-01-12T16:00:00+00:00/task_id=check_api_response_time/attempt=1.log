@@ -1,0 +1,32 @@
+[2026-01-12T17:00:01.473+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [queued]>
+[2026-01-12T17:00:01.475+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [queued]>
+[2026-01-12T17:00:01.476+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-12T17:00:01.480+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): check_api_response_time> on 2026-01-12 16:00:00+00:00
+[2026-01-12T17:00:01.482+0000] {standard_task_runner.py:60} INFO - Started process 8712 to run task
+[2026-01-12T17:00:01.484+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_data_quality_check', 'check_api_response_time', 'scheduled__2026-01-12T16:00:00+00:00', '--job-id', '412', '--raw', '--subdir', 'DAGS_FOLDER/crime_data_quality_check.py', '--cfg-path', '/tmp/tmpivar975q']
+[2026-01-12T17:00:01.485+0000] {standard_task_runner.py:88} INFO - Job 412: Subtask check_api_response_time
+[2026-01-12T17:00:01.492+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-12T17:00:01.507+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [running]> on host 1ded0c8eea01
+[2026-01-12T17:00:01.624+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_data_quality_check' AIRFLOW_CTX_TASK_ID='check_api_response_time' AIRFLOW_CTX_EXECUTION_DATE='2026-01-12T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-12T16:00:00+00:00'
+[2026-01-12T17:00:01.624+0000] {logging_mixin.py:188} INFO - 🔍 Checking API response time...
+[2026-01-12T17:00:03.191+0000] {logging_mixin.py:188} INFO - ✅ API response time check passed: 1.57 seconds
+[2026-01-12T17:00:03.192+0000] {python.py:201} INFO - Done. Returned value was: {'status': 'success', 'response_time': 1.56655}
+[2026-01-12T17:00:03.215+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_data_quality_check, task_id=check_api_response_time, execution_date=20260112T160000, start_date=20260112T170001, end_date=20260112T170003
+[2026-01-12T17:00:03.233+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-12T17:00:03.251+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-12T17:10:50.044+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [queued]>
+[2026-01-12T17:10:50.047+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [queued]>
+[2026-01-12T17:10:50.047+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-12T17:10:50.051+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): check_api_response_time> on 2026-01-12 16:00:00+00:00
+[2026-01-12T17:10:50.053+0000] {standard_task_runner.py:60} INFO - Started process 49 to run task
+[2026-01-12T17:10:50.055+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_data_quality_check', 'check_api_response_time', 'scheduled__2026-01-12T16:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/crime_data_quality_check.py', '--cfg-path', '/tmp/tmpxfjz29lg']
+[2026-01-12T17:10:50.056+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask check_api_response_time
+[2026-01-12T17:10:50.064+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-12T17:10:50.087+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_data_quality_check.check_api_response_time scheduled__2026-01-12T16:00:00+00:00 [running]> on host 0e74bb8933bd
+[2026-01-12T17:10:50.203+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_data_quality_check' AIRFLOW_CTX_TASK_ID='check_api_response_time' AIRFLOW_CTX_EXECUTION_DATE='2026-01-12T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-12T16:00:00+00:00'
+[2026-01-12T17:10:50.204+0000] {logging_mixin.py:188} INFO - 🔍 Checking API response time...
+[2026-01-12T17:10:51.747+0000] {logging_mixin.py:188} INFO - ✅ API response time check passed: 1.54 seconds
+[2026-01-12T17:10:51.747+0000] {python.py:201} INFO - Done. Returned value was: {'status': 'success', 'response_time': 1.542595}
+[2026-01-12T17:10:51.762+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_data_quality_check, task_id=check_api_response_time, execution_date=20260112T160000, start_date=20260112T171050, end_date=20260112T171051
+[2026-01-12T17:10:51.802+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-12T17:10:51.831+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

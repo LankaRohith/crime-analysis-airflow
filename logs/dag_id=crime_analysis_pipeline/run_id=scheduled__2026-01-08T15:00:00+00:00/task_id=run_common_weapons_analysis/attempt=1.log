@@ -1,0 +1,17 @@
+[2026-01-09T15:00:18.764+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_common_weapons_analysis scheduled__2026-01-08T15:00:00+00:00 [queued]>
+[2026-01-09T15:00:18.767+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_common_weapons_analysis scheduled__2026-01-08T15:00:00+00:00 [queued]>
+[2026-01-09T15:00:18.767+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-09T15:00:18.771+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): run_common_weapons_analysis> on 2026-01-08 15:00:00+00:00
+[2026-01-09T15:00:18.773+0000] {standard_task_runner.py:60} INFO - Started process 2056 to run task
+[2026-01-09T15:00:18.775+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_analysis_pipeline', 'run_common_weapons_analysis', 'scheduled__2026-01-08T15:00:00+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/crime_analysis_pipeline.py', '--cfg-path', '/tmp/tmpn30srd5o']
+[2026-01-09T15:00:18.776+0000] {standard_task_runner.py:88} INFO - Job 98: Subtask run_common_weapons_analysis
+[2026-01-09T15:00:18.783+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-09T15:00:18.796+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_analysis_pipeline.run_common_weapons_analysis scheduled__2026-01-08T15:00:00+00:00 [running]> on host 1ded0c8eea01
+[2026-01-09T15:00:18.888+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_analysis_pipeline' AIRFLOW_CTX_TASK_ID='run_common_weapons_analysis' AIRFLOW_CTX_EXECUTION_DATE='2026-01-08T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-08T15:00:00+00:00'
+[2026-01-09T15:00:18.889+0000] {logging_mixin.py:188} INFO - 🔄 Running common weapons analysis...
+[2026-01-09T15:00:20.283+0000] {logging_mixin.py:188} INFO - ✅ Common weapons analysis completed successfully
+[2026-01-09T15:00:20.284+0000] {logging_mixin.py:188} INFO - Top 5 weapons: [{'weapon': '400', 'usageCount': 123716}, {'weapon': 'DUPLEX', 'usageCount': 98970}, {'weapon': 'STREET', 'usageCount': 30740}, {'weapon': '500', 'usageCount': 22714}, {'weapon': '"VEHICLE', 'usageCount': 18400}]
+[2026-01-09T15:00:20.284+0000] {python.py:201} INFO - Done. Returned value was: {'status': 'success', 'data': [{'weapon': '400', 'usageCount': 123716}, {'weapon': 'DUPLEX', 'usageCount': 98970}, {'weapon': 'STREET', 'usageCount': 30740}, {'weapon': '500', 'usageCount': 22714}, {'weapon': '"VEHICLE', 'usageCount': 18400}]}
+[2026-01-09T15:00:20.296+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_analysis_pipeline, task_id=run_common_weapons_analysis, execution_date=20260108T150000, start_date=20260109T150018, end_date=20260109T150020
+[2026-01-09T15:00:20.330+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-09T15:00:20.397+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
