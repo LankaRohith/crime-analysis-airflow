@@ -1,0 +1,30 @@
+[2026-01-08T19:09:22.395+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:09:22.397+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:09:22.398+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-08T19:09:22.403+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): check_api_health> on 2026-01-07 15:00:00+00:00
+[2026-01-08T19:09:22.404+0000] {standard_task_runner.py:60} INFO - Started process 206 to run task
+[2026-01-08T19:09:22.406+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_analysis_pipeline', 'check_api_health', 'scheduled__2026-01-07T15:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/crime_analysis_pipeline.py', '--cfg-path', '/tmp/tmpaw1ymm_g']
+[2026-01-08T19:09:22.407+0000] {standard_task_runner.py:88} INFO - Job 18: Subtask check_api_health
+[2026-01-08T19:09:22.413+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-08T19:09:22.426+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [running]> on host 65092400eec3
+[2026-01-08T19:09:22.551+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_analysis_pipeline' AIRFLOW_CTX_TASK_ID='check_api_health' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T15:00:00+00:00'
+[2026-01-08T19:09:24.127+0000] {logging_mixin.py:188} INFO - ✅ API is healthy and responsive
+[2026-01-08T19:09:24.129+0000] {python.py:201} INFO - Done. Returned value was: True
+[2026-01-08T19:09:24.179+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_analysis_pipeline, task_id=check_api_health, execution_date=20260107T150000, start_date=20260108T190922, end_date=20260108T190924
+[2026-01-08T19:09:24.259+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-08T19:09:24.280+0000] {taskinstance.py:3281} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2026-01-08T19:29:39.254+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:29:39.257+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:29:39.257+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-08T19:29:39.261+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): check_api_health> on 2026-01-07 15:00:00+00:00
+[2026-01-08T19:29:39.264+0000] {standard_task_runner.py:60} INFO - Started process 39 to run task
+[2026-01-08T19:29:39.266+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_analysis_pipeline', 'check_api_health', 'scheduled__2026-01-07T15:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/crime_analysis_pipeline.py', '--cfg-path', '/tmp/tmpx_qucz1y']
+[2026-01-08T19:29:39.267+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask check_api_health
+[2026-01-08T19:29:39.273+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-08T19:29:39.285+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_analysis_pipeline.check_api_health scheduled__2026-01-07T15:00:00+00:00 [running]> on host 1ded0c8eea01
+[2026-01-08T19:29:39.388+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_analysis_pipeline' AIRFLOW_CTX_TASK_ID='check_api_health' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T15:00:00+00:00'
+[2026-01-08T19:29:41.392+0000] {logging_mixin.py:188} INFO - ✅ API is healthy and responsive
+[2026-01-08T19:29:41.392+0000] {python.py:201} INFO - Done. Returned value was: True
+[2026-01-08T19:29:41.417+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_analysis_pipeline, task_id=check_api_health, execution_date=20260107T150000, start_date=20260108T192939, end_date=20260108T192941
+[2026-01-08T19:29:41.437+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-08T19:29:41.453+0000] {taskinstance.py:3281} INFO - 5 downstream tasks scheduled from follow-on schedule check

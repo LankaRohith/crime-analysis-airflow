@@ -1,0 +1,34 @@
+[2026-01-08T19:09:28.953+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:09:28.956+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:09:28.956+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-08T19:09:28.959+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): run_top_locations_analysis> on 2026-01-07 15:00:00+00:00
+[2026-01-08T19:09:28.961+0000] {standard_task_runner.py:60} INFO - Started process 226 to run task
+[2026-01-08T19:09:28.963+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_analysis_pipeline', 'run_top_locations_analysis', 'scheduled__2026-01-07T15:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/crime_analysis_pipeline.py', '--cfg-path', '/tmp/tmpyzwuy8c1']
+[2026-01-08T19:09:28.964+0000] {standard_task_runner.py:88} INFO - Job 20: Subtask run_top_locations_analysis
+[2026-01-08T19:09:28.970+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-08T19:09:28.983+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [running]> on host 65092400eec3
+[2026-01-08T19:09:29.066+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_analysis_pipeline' AIRFLOW_CTX_TASK_ID='run_top_locations_analysis' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T15:00:00+00:00'
+[2026-01-08T19:09:29.067+0000] {logging_mixin.py:188} INFO - 🔄 Running top locations analysis...
+[2026-01-08T19:09:30.548+0000] {logging_mixin.py:188} INFO - ✅ Top locations analysis completed successfully
+[2026-01-08T19:09:30.549+0000] {logging_mixin.py:188} INFO - Top 3 locations: [{'location': 'IC', 'crimeCount': 145943}, {'location': '510', 'crimeCount': 115091}, {'location': 'Invest Cont', 'crimeCount': 84701}]
+[2026-01-08T19:09:30.550+0000] {python.py:201} INFO - Done. Returned value was: {'status': 'success', 'data': [{'location': 'IC', 'crimeCount': 145943}, {'location': '510', 'crimeCount': 115091}, {'location': 'Invest Cont', 'crimeCount': 84701}]}
+[2026-01-08T19:09:30.574+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_analysis_pipeline, task_id=run_top_locations_analysis, execution_date=20260107T150000, start_date=20260108T190928, end_date=20260108T190930
+[2026-01-08T19:09:30.590+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-08T19:09:30.605+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-08T19:30:07.807+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:30:07.815+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [queued]>
+[2026-01-08T19:30:07.815+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-01-08T19:30:07.824+0000] {taskinstance.py:2192} INFO - Executing <Task(_PythonDecoratedOperator): run_top_locations_analysis> on 2026-01-07 15:00:00+00:00
+[2026-01-08T19:30:07.829+0000] {standard_task_runner.py:60} INFO - Started process 121 to run task
+[2026-01-08T19:30:07.831+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'crime_analysis_pipeline', 'run_top_locations_analysis', 'scheduled__2026-01-07T15:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/crime_analysis_pipeline.py', '--cfg-path', '/tmp/tmputmybd93']
+[2026-01-08T19:30:07.833+0000] {standard_task_runner.py:88} INFO - Job 10: Subtask run_top_locations_analysis
+[2026-01-08T19:30:07.844+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2026-01-08T19:30:07.865+0000] {task_command.py:423} INFO - Running <TaskInstance: crime_analysis_pipeline.run_top_locations_analysis scheduled__2026-01-07T15:00:00+00:00 [running]> on host 1ded0c8eea01
+[2026-01-08T19:30:07.981+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='crime-analysis' AIRFLOW_CTX_DAG_ID='crime_analysis_pipeline' AIRFLOW_CTX_TASK_ID='run_top_locations_analysis' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T15:00:00+00:00'
+[2026-01-08T19:30:07.981+0000] {logging_mixin.py:188} INFO - 🔄 Running top locations analysis...
+[2026-01-08T19:30:09.664+0000] {logging_mixin.py:188} INFO - ✅ Top locations analysis completed successfully
+[2026-01-08T19:30:09.665+0000] {logging_mixin.py:188} INFO - Top 3 locations: [{'location': 'IC', 'crimeCount': 145943}, {'location': '510', 'crimeCount': 115091}, {'location': 'Invest Cont', 'crimeCount': 84701}]
+[2026-01-08T19:30:09.666+0000] {python.py:201} INFO - Done. Returned value was: {'status': 'success', 'data': [{'location': 'IC', 'crimeCount': 145943}, {'location': '510', 'crimeCount': 115091}, {'location': 'Invest Cont', 'crimeCount': 84701}]}
+[2026-01-08T19:30:09.697+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=crime_analysis_pipeline, task_id=run_top_locations_analysis, execution_date=20260107T150000, start_date=20260108T193007, end_date=20260108T193009
+[2026-01-08T19:30:09.752+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-01-08T19:30:09.787+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check
